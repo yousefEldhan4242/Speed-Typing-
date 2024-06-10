@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.game {
+  min-height: 100vh;
+  background-color: #eee;
+}
+.game .name {
+  background-color: #2196F3;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+}
+.game .container {
+  max-width: 900px;
+  margin: auto;
+}
+.game .container .message {
+  background-color: white;
+  padding: 15px;
+  margin: 15px 0;
+  text-align: center;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.game .container .message span {
+  font-weight: bold;
+  color: #009688;
+}
+.game .container .message span::before {
+  content: "[ ";
+}
+.game .container .message span::after {
+  content: " ]";
+}
+.game .container .start {
+  cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #009688;
+  color: #FFF;
+  padding: 20px;
+}
+.game .container .the-word {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: #2196F3;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.game .container .input {
+  display: block;
+  margin: 15px 0;
+  width: 100%;
+  padding: 25px;
+  border: 3px solid #2196F3;
+  text-align: center;
+  caret-color: #2196F3;
+  font-size: 20px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.game .container .input:focus {
+  outline: none;
+}
+.game .container .upcoming-words {
+  background-color: #FFF;
+  padding: 15px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.game .container .upcoming-words div {
+  background-color: #2196F3;
+  color: #FFF;
+  font-weight: bold;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.game .container .statistics {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFF;
+}
+.game .container .statistics span {
+  font-weight: bold;
+  color: #009688;
+}
+.game .container .finish {
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  padding: 15px;
+}
+.game .container .finish .win {
+  color: #2196F3;
+}
+.game .container .finish .lose {
+  color: red;
+}/*# sourceMappingURL=main.css.map */

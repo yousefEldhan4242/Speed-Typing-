@@ -1,0 +1,127 @@
+$main_color: #2196F3;
+$secondary_color: #009688;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+.game{
+    min-height: 100vh;
+    background-color: #eee;
+    .name{
+        background-color: $main_color;
+        color: #FFF;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+        padding: 20px;
+    }
+    .container{
+        max-width: 900px;
+        margin: auto;
+        .message{
+            background-color: white;
+            padding: 15px;
+            margin: 15px 0;
+            text-align: center;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -o-border-radius: 6px;
+            span{
+                font-weight: bold;
+                color: $secondary_color;
+                &::before{
+                    content: "[ ";
+                }
+                &::after{
+                    content: " ]";
+                }
+            }
+        }
+        .start{
+            cursor: pointer;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: $secondary_color;
+            color: #FFF;
+            padding: 20px;
+        }
+        .the-word{
+            text-align: center;
+            font-weight: bold;
+            font-size: 60px;
+            color: $main_color;
+            user-select: none;
+        }
+        .input{
+            display: block;
+            margin: 15px 0;
+            width: 100%;
+            padding: 25px;
+            border: 3px solid $main_color;
+            text-align: center;
+            caret-color: $main_color;
+            font-size: 20px;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -o-border-radius: 6px;
+            &:focus{
+                outline: none;
+            }
+        }
+        .upcoming-words{
+            background-color: #FFF;
+            padding: 15px;
+            margin: 15px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            div{
+                background-color: $main_color;
+                color: #FFF;
+                font-weight: bold;
+                margin: 5px;
+                padding: 5px;
+                border-radius: 6px;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                -ms-border-radius: 6px;
+                -o-border-radius: 6px;
+            }
+        }
+        .statistics{
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #FFF;
+            span{
+                font-weight: bold;
+                color: $secondary_color;
+            }
+        }
+        .finish{
+            font-weight: bold;
+            text-align: center;
+            font-size: 40px;
+            padding: 15px;
+            .win{
+                color: $main_color;
+            }
+            .lose{
+                color: red;
+            }
+        }
+    }
+}

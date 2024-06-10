@@ -1,0 +1,8 @@
+  [04] Your Trainings To Add Features
+  ---- [01] Save Score To Local Storage With Date  // Done
+  ---- [02] Choose Levels From Select Box // Done
+  ---- [03] Break The Logic To More Functions  // Done
+  ---- [04] Choose Array Of Words For Every Level // Done
+  ---- [05] Write Game Instruction With Dynamic Values // Done
+  ---- [06] Add 3 Seconds For The First Word // Done
+  ---- [07] For Hard Levels Check The Words Exactly Without ToLowerCase()
